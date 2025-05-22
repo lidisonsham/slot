@@ -1,5 +1,5 @@
 # Ex03 Time Table
-## Date:26.4.25
+## Date:15.03.2025
 
 ## AIM
 To write a html webpage page to display your slot timetable.
@@ -8,7 +8,7 @@ To write a html webpage page to display your slot timetable.
 ### STEP 1
 Create a Django-admin Interface.
 
-### STEP 2a
+### STEP 2
 Create a static folder and inert HTML code.
 
 ### STEP 3
@@ -25,137 +25,112 @@ Execute the program using runserver command.
 
 ## PROGRAM
 ```
-v<!DOCTYPE html><html>
-    <head>
-        <title>Class Timetable</title>
-        <style>
-            table {
-                width: 60%;
-                border-collapse: collapse;
-                margin-bottom: 20px;
-            }
-            th, td {
-                border: 1px solid black;
-                padding: 8px;
-                text-align: center;
-            }
-            th {
-                background-color: yellow;
-            }
-            .highlight {
-                background-color: lightblue;
-            }
-        </style>
-    </head>
-    <body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=!, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
     <center>
-        <img src="/static/logo.png" height="100" width="750">
-    
-        
-    <h2>Class Timetable</h2>
-    <table>
-        <tr>
-            <th>Day/Time</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-        </tr>
-        <tr class="highlight">
-            <td>8-10</td>
-            <td>EEE</td>
-            <td>ALGEBRA</td>
-            <td></td>
-            <td>PHY</td>
-            <td>PROBABILITY</td>
-        </tr>
-        <tr class="highlight">
-            <td>10-12</td>
-            <td>STATISTICS</td>
-            <td>FREE SLOT</td>
-            <td>FWAD</td>
-            <td>FWAD</td>
-            <td>PHY</td>
-        </tr>
-        <tr>
-            <td>12-1</td>
-            <td colspan="5">LUNCH</td>
-        </tr>
-        <tr class="highlight">
-            <td>1-3</td>
-            <td>ALGEBRA</td>
-            <td>EEE</td>
-            <td>MAT</td>
-            <td>MAT</td>
-            <td>SS</td>
-        </tr>
-        <tr class="highlight">
-            <td>3-5</td>
-            <td>FREE SLOT</td>
-            <td>STATISTICS</td>
-            <td>PROBABILITY</td>
-            <td>FWAD</td>
-            <td></td>
-        </tr>
-    </table>
-    
-    <h2>Subject Details</h2>
-    <table>
-        <tr>
-            <th>S. No.</th>
-            <th>Subject Code</th>
-            <th>Subject Name</th>
-        </tr>
-        <tr>
-            <td>1</td>
-            <td>19AI414</td>
-            <td>Fundamentals of Web Application Development (FWAD)</td>
-        </tr>
-        <tr>
-            <td>2</td>
-            <td>19EE414</td>
-            <td>EEE</td>
-        </tr>
-        <tr>
-            <td>3</td>
-            <td>19PH206</td>
-            <td>Physics for Information Technology (PHY)</td>
-        </tr>
-        <tr>
-            <td>4</td>
-            <td>19MA211</td>
-            <td>Probability</td>
-        </tr>
-        <tr>
-            <td>5</td>
-            <td>19MA201</td>
-            <td>Calculus and Matrix Algebra (MAT)</td>
-        </tr>
-        <tr>
-            <td>6</td>
-            <td>19EY701</td>
-            <td>Soft Skills (SS)</td>
-        </tr>
-        <tr>
-            <td>7</td>
-            <td>19MA412</td>
-            <td>Statistics</td>
-        </tr>
-        <tr>
-            <td>8</td>
-            <td>19MA312</td>
-            <td>Algebra</td>
-        </tr>
-    </table>
+    <img src="logo.jpg">
     </center>
-    
+    <center><h3>SLOT TIME TABLE-DIVYA DHARSHINI.S(24900891)</h3></center>
+    <center> <table border="6"></center>
+        <tr>
+            <td bgcolor="skyblue">Day/Time</td>
+            <td bgcolor="skyblue">Monday</td>
+            <td bgcolor="skyblue">Tuesday</td>
+            <td bgcolor="skyblue">Wednesday</td>
+            <td bgcolor="skyblue">Thursday</td>
+            <td bgcolor="skyblue">Friday</td>
+        </tr>
+        <tr>
+            <td bgcolor="skyblue">8-10</td>
+            <th bgcolor="pink" colspan="3">FREE SLOT</th>
+            <td bgcolor="pink">PHY</td>
+            <td bgcolor="pink">CHE</td>
+        </tr>
+        <tr>
+            <td bgcolor="skyblue">10-12</td>
+            <td bgcolor="pink">BEEE</td>
+            <td bgcolor="pink">FREE SLOT</td>
+            <td bgcolor="pink">BEEE</td>
+            <td bgcolor="pink">DE</td>
+            <td bgcolor="pink">CHEM</td>
+        </tr>
+        <tr>
+            <td bgcolor="skyblue">12-1</td>
+            <th bgcolor="pink" colspan="6">LUNCH</th>
+        </tr>
+        <tr>
+            <td bgcolor="skyblue">1-3</td>
+            <td bgcolor="pink">C</td>
+            <td bgcolor="pink">FREE SLOT</td>
+            <td bgcolor="pink">MM</td>
+            <td bgcolor="pink">MaT</td>
+            <td bgcolor="pink">C</td>
+            
+        </tr>
+        <tr>
+            <td bgcolor="skyblue">3-5</td>
+            <td bgcolor="pink">RA</td>
+            <th bgcolor="pink"> FREE SLOT</th>
+            <td bgcolor="pink">CHEM</td>
+            <td bgcolor="pink">FREE SLOT</td>
+            <td bgcolor="pink">FREE SLOT</td>
+        </tr>
+    </table></center>
+        <br>
+        <center> <table border="6"</center>
+            <tr>
+                <td>S.NO.</td>
+                <td>Subject Code</td>
+                <td>Subject Name</td>
+            </tr>
+            <tr>
+                <td>1.</td>
+                <td>19AI414</td>
+                <td>Fundamental of web application</td>
+            </tr>
+            <tr>
+                <td>2.</td>
+                <td>19AI304</td>
+                <td>C Programming</td>
+            </tr>
+            <tr>
+                <td>3.</td>
+                <td>19PH206</td>
+                <td>Basis Electrical,Electronics and Measurement Engineering</td>
+            </tr>
+            <tr>
+                <td>4.</td>
+                <td>19CY205</td>
+                <td>Principle of chemistry in engineering</td>
+            </tr>
+            <tr>
+                <td>5.</td>
+                <td>19MA222</td>
+                <td>Probability and Queueing Models</td>
+            </tr>
+            <tr>
+                <td>6.</td>
+                <td>19EY709</td>
+                <td>Reasoning Ability</td>
+            </tr>
+            <tr>
+                <td>7.</td>
+                <td>19EE404</td>
+                <td>Digital Electronics</td>
+            </tr>
     </body>
-    </html>
+</html>
 ```
 
+
 ## OUTPUT
-![alt text](<Screenshot 2025-04-23 194331.png>)
+![Screenshot 2025-03-14 211222](https://github.com/user-attachments/assets/613b1051-0ab5-46b5-9832-ed7e31e5acae)
 
 
 ## RESULT
